@@ -1,16 +1,17 @@
-# C# Design Patterns Learning Repository
+# C# Design Patterns Learning
 
-A clean, beginner-friendly learning repository for all **23 Gang of Four (GoF) Design Patterns**, implemented as small, independently runnable **C# / .NET 9 Console** examples.
+Learn all **23 Gang of Four (GoF) design patterns** through small, independently runnable **C# / .NET 9** console examples.
 
-Open `DesignPatternsLearning.sln` in **Visual Studio 2022** and explore each pattern in 2–5 minutes.
+Each pattern shows the **problem first**, then the **pattern-based solution**, with a short guide on when to use it — and when not to.
+
+Open `DesignPatternsLearning.sln` in Visual Studio 2022, or run any example from the command line in a few minutes.
 
 ## What You Will Learn
 
 - What each pattern solves
 - Why the problem exists
 - How the pattern changes the design
-- When to use the pattern
-- When not to use it
+- When to use it — and when not to
 - How to recognize the pattern in real applications
 
 ## Quick Links
@@ -26,7 +27,7 @@ Open `DesignPatternsLearning.sln` in **Visual Studio 2022** and explore each pat
 ## Repository Structure
 
 ```text
-DesignPatternsLearning/
+design-patterns/
 ├── Creational/     (5 patterns)
 ├── Structural/     (7 patterns)
 ├── Behavioral/     (11 patterns)
@@ -44,10 +45,15 @@ PatternName/
 
 ## How to Run Examples
 
+### Requirements
+
+- [.NET 9 SDK](https://dotnet.microsoft.com/download)
+- Visual Studio 2022 (optional, recommended)
+
 ### Visual Studio 2022
 
 1. Open `DesignPatternsLearning.sln`
-2. In Solution Explorer, navigate to a pattern (e.g., `Behavioral` → `Strategy`)
+2. In Solution Explorer, navigate to a pattern (e.g. `Behavioral` → `Strategy`)
 3. Right-click `Strategy.Problem` or `Strategy.Solution` → **Set as Startup Project**
 4. Press **F5**
 
@@ -77,48 +83,43 @@ For each pattern:
 
 | Pattern | Category | Main Idea | Difficulty |
 |---------|----------|-----------|------------|
-| Singleton | Creational | One shared instance | Beginner |
-| Factory Method | Creational | Delegate object creation | Beginner |
-| Abstract Factory | Creational | Create compatible product families | Intermediate |
-| Builder | Creational | Build complex objects step-by-step | Beginner |
-| Prototype | Creational | Clone existing objects | Intermediate |
-| Adapter | Structural | Make incompatible interfaces work together | Beginner |
-| Bridge | Structural | Separate abstraction from implementation | Intermediate |
-| Composite | Structural | Treat parts and wholes uniformly | Beginner |
-| Decorator | Structural | Add behavior by wrapping | Beginner |
-| Facade | Structural | Simplify complex subsystem | Beginner |
-| Flyweight | Structural | Share repeated intrinsic state | Advanced |
-| Proxy | Structural | Control access to another object | Intermediate |
-| Chain of Responsibility | Behavioral | Pass request through handlers | Intermediate |
-| Command | Behavioral | Encapsulate an action | Intermediate |
-| Interpreter | Behavioral | Define and evaluate a grammar | Advanced |
-| Iterator | Behavioral | Traverse without exposing internals | Beginner |
-| Mediator | Behavioral | Centralize object communication | Intermediate |
-| Memento | Behavioral | Save and restore state | Intermediate |
-| Observer | Behavioral | Notify subscribers | Beginner |
-| State | Behavioral | Behavior changes with state | Intermediate |
-| Strategy | Behavioral | Interchangeable behavior | Beginner |
-| Template Method | Behavioral | Fixed workflow, customizable steps | Intermediate |
-| Visitor | Behavioral | Add operations without changing elements | Advanced |
+| [Singleton](Creational/Singleton/README.md) | Creational | One shared instance | Beginner |
+| [Factory Method](Creational/FactoryMethod/README.md) | Creational | Delegate object creation | Beginner |
+| [Abstract Factory](Creational/AbstractFactory/README.md) | Creational | Create compatible product families | Intermediate |
+| [Builder](Creational/Builder/README.md) | Creational | Build complex objects step-by-step | Beginner |
+| [Prototype](Creational/Prototype/README.md) | Creational | Clone existing objects | Intermediate |
+| [Adapter](Structural/Adapter/README.md) | Structural | Make incompatible interfaces work together | Beginner |
+| [Bridge](Structural/Bridge/README.md) | Structural | Separate abstraction from implementation | Intermediate |
+| [Composite](Structural/Composite/README.md) | Structural | Treat parts and wholes uniformly | Beginner |
+| [Decorator](Structural/Decorator/README.md) | Structural | Add behavior by wrapping | Beginner |
+| [Facade](Structural/Facade/README.md) | Structural | Simplify a complex subsystem | Beginner |
+| [Flyweight](Structural/Flyweight/README.md) | Structural | Share repeated intrinsic state | Advanced |
+| [Proxy](Structural/Proxy/README.md) | Structural | Control access to another object | Intermediate |
+| [Chain of Responsibility](Behavioral/ChainOfResponsibility/README.md) | Behavioral | Pass request through handlers | Intermediate |
+| [Command](Behavioral/Command/README.md) | Behavioral | Encapsulate an action | Intermediate |
+| [Interpreter](Behavioral/Interpreter/README.md) | Behavioral | Define and evaluate a grammar | Advanced |
+| [Iterator](Behavioral/Iterator/README.md) | Behavioral | Traverse without exposing internals | Beginner |
+| [Mediator](Behavioral/Mediator/README.md) | Behavioral | Centralize object communication | Intermediate |
+| [Memento](Behavioral/Memento/README.md) | Behavioral | Save and restore state | Intermediate |
+| [Observer](Behavioral/Observer/README.md) | Behavioral | Notify subscribers | Beginner |
+| [State](Behavioral/State/README.md) | Behavioral | Behavior changes with state | Intermediate |
+| [Strategy](Behavioral/Strategy/README.md) | Behavioral | Interchangeable behavior | Beginner |
+| [Template Method](Behavioral/TemplateMethod/README.md) | Behavioral | Fixed workflow, customizable steps | Intermediate |
+| [Visitor](Behavioral/Visitor/README.md) | Behavioral | Add operations without changing elements | Advanced |
 
 ## Technology
 
 - **C#** with modern syntax
-- **.NET 9** Console Applications
+- **.NET 9** console applications
 - **Visual Studio 2022** compatible
 - No external NuGet packages, databases, or web frameworks
 
-## Requirements
-
-- [.NET 9 SDK](https://dotnet.microsoft.com/download)
-- Visual Studio 2022 (optional, recommended)
-
 ## Philosophy
 
-> Make the Design Pattern obvious.
+> Make the design pattern obvious.
 
 Examples are intentionally small. The goal is to understand **what problem you are facing** and **which pattern can help** — not to build a production application.
 
 ## License
 
-Free to use for personal learning, revision, interview preparation, and sharing with other developers.
+MIT — free to use for personal learning, revision, interview preparation, and sharing with other developers.
